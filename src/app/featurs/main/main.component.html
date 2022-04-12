@@ -1,0 +1,74 @@
+<p>main works!</p>
+<p>
+    <mat-toolbar>
+      <span>My Application</span>
+    </mat-toolbar>
+  </p>
+  
+  <p>
+    <mat-toolbar>
+     <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    </button>
+    <span>My App</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+   </button>
+  </mat-toolbar>
+  </p>
+  
+  <p>
+    <mat-toolbar color="primary">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      </button>
+      <span>My App</span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      </button>
+    </mat-toolbar>
+  </p>
+  
+  <p>
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <span>My App</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+         
+        </button>
+      </mat-toolbar-row>
+  
+      <mat-toolbar-row>
+        <span>Second Line</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        </button>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        </button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </p>
+  
+
+<mat-sidenav-container class="example-container" *ngIf="shouldRun">
+    <mat-sidenav mode="side" opened>Sidenav content</mat-sidenav>
+    <mat-sidenav-content>Main content</mat-sidenav-content>
+  </mat-sidenav-container>
+  
+  <div *ngIf="!shouldRun">Please open on Stackblitz to see result Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quia eius amet, cum natus 
+      fuga libero tempora alias voluptatem repellat officia velit suscipit soluta sit enim, nobis ad laborum perferendis!</div>
+     
+      <mat-drawer-container class="examples-container">
+        <mat-drawer mode="side" opened> amet consectetur adipisicing elit. Officia, praesentium.</mat-drawer>
+        <mat-drawer-content>Main content Lorem ipsum dolor sit, amet consectetur ectetur quia sed magnam omnis dolorem earum.</mat-drawer-content>
+      </mat-drawer-container>
+      <br><br>
+      <mat-tab-group>
+        <mat-tab label="First"> <h1>python developer arpan saini</h1> </mat-tab>
+        <mat-tab label="Second"> <h1>Content 2 and angular developer arpan saini </h1> </mat-tab>
+        <mat-tab label="Third"> <h1>Content 3*2=6=> S->he is arpan saini FULL Stack developer </h1> </mat-tab>
+      </mat-tab-group>
+      

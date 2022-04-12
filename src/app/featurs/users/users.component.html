@@ -1,0 +1,46 @@
+<p>users works!</p>
+<form class="example-form" [formGroup]="formsdata" (ngSubmit)="onSubmit()" style="padding-left: 35%;">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Email</mat-label>
+      <input formsdata="email" type="email" formControlName="email" matInput placeholder="Ex. pat@example.com" #em/>
+      <!-- <mat-hint>Errors appear instantly!</mat-hint>
+      <mat-error >
+        Please enter a valid email address
+      </mat-error> -->
+      <mat-error *ngIf="checkError('email','required')" >Email is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Password</mat-label><input formsdata="password" formControlName="password" type="password" matInput placeholder="************" #pass required />
+        <!-- <mat-hint>Errors appear instantly!</mat-hint>
+        <mat-error >
+          Please enter a valid password
+        </mat-error> -->
+        <mat-error *ngIf="checkError('password','required')">Password is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <button mat-button color="primary">Submit</button> 
+  </form>
+  <br>
+  <section>
+    <div class="example-label"></div>
+    <div class="example-button-row">
+    
+    </div>
+  </section>
+    <br><br><br>
+    <!-- <table>
+        <thead>
+            <th>No.</th>
+            <th>Email</th>
+            <th>Password</th>
+        </thead>
+        <tbody>
+            <td>1.</td>
+            <td>{{ee.email}}</td>
+            <td>{{ee.password}}</td>
+          
+        </tbody>
+    </table> -->
+
+    
